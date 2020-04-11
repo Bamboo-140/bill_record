@@ -1,4 +1,4 @@
-﻿namespace bill_record
+namespace bill_record
 {
     partial class MainForm
     {
@@ -83,14 +83,14 @@
             // userManager
             // 
             this.userManager.Name = "userManager";
-            this.userManager.Size = new System.Drawing.Size(180, 22);
+            this.userManager.Size = new System.Drawing.Size(144, 22);
             this.userManager.Text = "用户管理(&M)";
             this.userManager.Click += new System.EventHandler(this.userManager_Click);
             // 
             // option
             // 
             this.option.Name = "option";
-            this.option.Size = new System.Drawing.Size(180, 22);
+            this.option.Size = new System.Drawing.Size(144, 22);
             this.option.Text = "选项(&O)";
             this.option.Click += new System.EventHandler(this.option_Click);
             // 
@@ -175,9 +175,9 @@
             // 
             this.pic_in.Image = global::bill_record.Properties.Resources.feed_in_128px_1210751_easyicon_net;
             this.pic_in.InitialImage = ((System.Drawing.Image)(resources.GetObject("pic_in.InitialImage")));
-            this.pic_in.Location = new System.Drawing.Point(12, 14);
+            this.pic_in.Location = new System.Drawing.Point(13, 14);
             this.pic_in.Name = "pic_in";
-            this.pic_in.Size = new System.Drawing.Size(111, 87);
+            this.pic_in.Size = new System.Drawing.Size(89, 87);
             this.pic_in.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_in.TabIndex = 1;
             this.pic_in.TabStop = false;
@@ -188,9 +188,9 @@
             // 
             this.pic_out.Image = global::bill_record.Properties.Resources.exit_128px_1210133_easyicon_net;
             this.pic_out.InitialImage = ((System.Drawing.Image)(resources.GetObject("pic_out.InitialImage")));
-            this.pic_out.Location = new System.Drawing.Point(12, 107);
+            this.pic_out.Location = new System.Drawing.Point(13, 107);
             this.pic_out.Name = "pic_out";
-            this.pic_out.Size = new System.Drawing.Size(111, 87);
+            this.pic_out.Size = new System.Drawing.Size(89, 87);
             this.pic_out.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_out.TabIndex = 0;
             this.pic_out.TabStop = false;
@@ -200,9 +200,9 @@
             // pic_monthly
             // 
             this.pic_monthly.Image = global::bill_record.Properties.Resources.calendar_clock_icon;
-            this.pic_monthly.Location = new System.Drawing.Point(12, 293);
+            this.pic_monthly.Location = new System.Drawing.Point(13, 293);
             this.pic_monthly.Name = "pic_monthly";
-            this.pic_monthly.Size = new System.Drawing.Size(111, 87);
+            this.pic_monthly.Size = new System.Drawing.Size(89, 87);
             this.pic_monthly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_monthly.TabIndex = 5;
             this.pic_monthly.TabStop = false;
@@ -212,9 +212,9 @@
             // pic_bill
             // 
             this.pic_bill.Image = global::bill_record.Properties.Resources.see_no_evil_monkey_128px_1214323_easyicon_net;
-            this.pic_bill.Location = new System.Drawing.Point(12, 200);
+            this.pic_bill.Location = new System.Drawing.Point(13, 200);
             this.pic_bill.Name = "pic_bill";
-            this.pic_bill.Size = new System.Drawing.Size(111, 87);
+            this.pic_bill.Size = new System.Drawing.Size(89, 87);
             this.pic_bill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_bill.TabIndex = 5;
             this.pic_bill.TabStop = false;
