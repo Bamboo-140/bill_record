@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsd_Category" targetNamespace="http://tempuri.org/xsd_Category.xsd" xmlns:mstns="http://tempuri.org/xsd_Category.xsd" xmlns="http://tempuri.org/xsd_Category.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DataStorageConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DataStorageConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.bill_record.Properties.Settings.GlobalReference.Default.DataStorageConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsd_Category" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsd_Category" msprop:Generator_UserDSName="xsd_Category">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_main" msprop:Generator_TableClassName="tbl_mainDataTable" msprop:Generator_TableVarName="tabletbl_main" msprop:Generator_TablePropName="tbl_main" msprop:Generator_RowDeletingName="tbl_mainRowDeleting" msprop:Generator_RowChangingName="tbl_mainRowChanging" msprop:Generator_RowEvHandlerName="tbl_mainRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_mainRowDeleted" msprop:Generator_UserTableName="tbl_main" msprop:Generator_RowChangedName="tbl_mainRowChanged" msprop:Generator_RowEvArgName="tbl_mainRowChangeEvent" msprop:Generator_RowClassName="tbl_mainRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="m_id" msprop:Generator_ColumnVarNameInTable="columnm_id" msprop:Generator_ColumnPropNameInRow="m_id" msprop:Generator_ColumnPropNameInTable="m_idColumn" msprop:Generator_UserColumnName="m_id" type="xs:int" />
+              <xs:element name="m_type" msprop:Generator_ColumnVarNameInTable="columnm_type" msprop:Generator_ColumnPropNameInRow="m_type" msprop:Generator_ColumnPropNameInTable="m_typeColumn" msprop:Generator_UserColumnName="m_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="m_note" msprop:Generator_ColumnVarNameInTable="columnm_note" msprop:Generator_ColumnPropNameInRow="m_note" msprop:Generator_ColumnPropNameInTable="m_noteColumn" msprop:Generator_UserColumnName="m_note" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_sub" msprop:Generator_TableClassName="tbl_subDataTable" msprop:Generator_TableVarName="tabletbl_sub" msprop:Generator_TablePropName="tbl_sub" msprop:Generator_RowDeletingName="tbl_subRowDeleting" msprop:Generator_RowChangingName="tbl_subRowChanging" msprop:Generator_RowEvHandlerName="tbl_subRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_subRowDeleted" msprop:Generator_UserTableName="tbl_sub" msprop:Generator_RowChangedName="tbl_subRowChanged" msprop:Generator_RowEvArgName="tbl_subRowChangeEvent" msprop:Generator_RowClassName="tbl_subRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="s_id" msprop:Generator_ColumnVarNameInTable="columns_id" msprop:Generator_ColumnPropNameInRow="s_id" msprop:Generator_ColumnPropNameInTable="s_idColumn" msprop:Generator_UserColumnName="s_id" type="xs:int" />
+              <xs:element name="s_name" msprop:Generator_ColumnVarNameInTable="columns_name" msprop:Generator_ColumnPropNameInRow="s_name" msprop:Generator_ColumnPropNameInTable="s_nameColumn" msprop:Generator_UserColumnName="s_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="s_mainId" msprop:Generator_ColumnVarNameInTable="columns_mainId" msprop:Generator_ColumnPropNameInRow="s_mainId" msprop:Generator_ColumnPropNameInTable="s_mainIdColumn" msprop:Generator_UserColumnName="s_mainId" type="xs:int" />
+              <xs:element name="s_note" msprop:Generator_ColumnVarNameInTable="columns_note" msprop:Generator_ColumnPropNameInRow="s_note" msprop:Generator_ColumnPropNameInTable="s_noteColumn" msprop:Generator_UserColumnName="s_note" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_main" />
+      <xs:field xpath="mstns:m_id" />
+    </xs:unique>
+    <xs:unique name="tbl_sub_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_sub" />
+      <xs:field xpath="mstns:s_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

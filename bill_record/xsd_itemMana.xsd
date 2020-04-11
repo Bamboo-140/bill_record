@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsd_itemMana" targetNamespace="http://tempuri.org/xsd_itemMana.xsd" xmlns:mstns="http://tempuri.org/xsd_itemMana.xsd" xmlns="http://tempuri.org/xsd_itemMana.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DataStorageConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DataStorageConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.bill_record.Properties.Settings.GlobalReference.Default.DataStorageConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsd_itemMana" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsd_itemMana" msprop:Generator_UserDSName="xsd_itemMana">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_item" msprop:Generator_TableClassName="tbl_itemDataTable" msprop:Generator_TableVarName="tabletbl_item" msprop:Generator_TablePropName="tbl_item" msprop:Generator_RowDeletingName="tbl_itemRowDeleting" msprop:Generator_RowChangingName="tbl_itemRowChanging" msprop:Generator_RowEvHandlerName="tbl_itemRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_itemRowDeleted" msprop:Generator_UserTableName="tbl_item" msprop:Generator_RowChangedName="tbl_itemRowChanged" msprop:Generator_RowEvArgName="tbl_itemRowChangeEvent" msprop:Generator_RowClassName="tbl_itemRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="it_serial" msprop:Generator_ColumnVarNameInTable="columnit_serial" msprop:Generator_ColumnPropNameInRow="it_serial" msprop:Generator_ColumnPropNameInTable="it_serialColumn" msprop:Generator_UserColumnName="it_serial" type="xs:int" />
+              <xs:element name="it_name" msprop:Generator_ColumnVarNameInTable="columnit_name" msprop:Generator_ColumnPropNameInRow="it_name" msprop:Generator_ColumnPropNameInTable="it_nameColumn" msprop:Generator_UserColumnName="it_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="it_unit" msprop:Generator_ColumnVarNameInTable="columnit_unit" msprop:Generator_ColumnPropNameInRow="it_unit" msprop:Generator_ColumnPropNameInTable="it_unitColumn" msprop:Generator_UserColumnName="it_unit">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="it_validity" msprop:Generator_ColumnVarNameInTable="columnit_validity" msprop:Generator_ColumnPropNameInRow="it_validity" msprop:Generator_ColumnPropNameInTable="it_validityColumn" msprop:Generator_UserColumnName="it_validity" type="xs:boolean" />
+              <xs:element name="it_recoder" msprop:Generator_ColumnVarNameInTable="columnit_recoder" msprop:Generator_ColumnPropNameInRow="it_recoder" msprop:Generator_ColumnPropNameInTable="it_recoderColumn" msprop:Generator_UserColumnName="it_recoder">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="it_type" msprop:Generator_ColumnVarNameInTable="columnit_type" msprop:Generator_ColumnPropNameInRow="it_type" msprop:Generator_ColumnPropNameInTable="it_typeColumn" msprop:Generator_UserColumnName="it_type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_item" />
+      <xs:field xpath="mstns:it_serial" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

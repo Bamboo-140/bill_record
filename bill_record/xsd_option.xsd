@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsd_option" targetNamespace="http://tempuri.org/xsd_option.xsd" xmlns:mstns="http://tempuri.org/xsd_option.xsd" xmlns="http://tempuri.org/xsd_option.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DataStorageConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DataStorageConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.bill_record.Properties.Settings.GlobalReference.Default.DataStorageConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsd_option" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsd_option" msprop:Generator_UserDSName="xsd_option">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_config" msprop:Generator_TableClassName="tbl_configDataTable" msprop:Generator_TableVarName="tabletbl_config" msprop:Generator_TablePropName="tbl_config" msprop:Generator_RowDeletingName="tbl_configRowDeleting" msprop:Generator_RowChangingName="tbl_configRowChanging" msprop:Generator_RowEvHandlerName="tbl_configRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_configRowDeleted" msprop:Generator_UserTableName="tbl_config" msprop:Generator_RowChangedName="tbl_configRowChanged" msprop:Generator_RowEvArgName="tbl_configRowChangeEvent" msprop:Generator_RowClassName="tbl_configRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="carry_forward" msprop:Generator_ColumnVarNameInTable="columncarry_forward" msprop:Generator_ColumnPropNameInRow="carry_forward" msprop:Generator_ColumnPropNameInTable="carry_forwardColumn" msprop:Generator_UserColumnName="carry_forward" type="xs:int" />
+              <xs:element name="decimal_format" msprop:Generator_ColumnVarNameInTable="columndecimal_format" msprop:Generator_ColumnPropNameInRow="decimal_format" msprop:Generator_ColumnPropNameInTable="decimal_formatColumn" msprop:Generator_UserColumnName="decimal_format" type="xs:int" />
+              <xs:element name="decimal_digit" msprop:Generator_ColumnVarNameInTable="columndecimal_digit" msprop:Generator_ColumnPropNameInRow="decimal_digit" msprop:Generator_ColumnPropNameInTable="decimal_digitColumn" msprop:Generator_UserColumnName="decimal_digit" type="xs:int" />
+              <xs:element name="allow_minus" msprop:Generator_ColumnVarNameInTable="columnallow_minus" msprop:Generator_ColumnPropNameInRow="allow_minus" msprop:Generator_ColumnPropNameInTable="allow_minusColumn" msprop:Generator_UserColumnName="allow_minus" type="xs:boolean" />
+              <xs:element name="allow_view_all" msprop:Generator_ColumnVarNameInTable="columnallow_view_all" msprop:Generator_ColumnPropNameInRow="allow_view_all" msprop:Generator_ColumnPropNameInTable="allow_view_allColumn" msprop:Generator_UserColumnName="allow_view_all" type="xs:boolean" />
+              <xs:element name="monthly_day" msprop:Generator_ColumnVarNameInTable="columnmonthly_day" msprop:Generator_ColumnPropNameInRow="monthly_day" msprop:Generator_ColumnPropNameInTable="monthly_dayColumn" msprop:Generator_UserColumnName="monthly_day" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

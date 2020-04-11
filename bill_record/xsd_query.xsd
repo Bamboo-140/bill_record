@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsd_query" targetNamespace="http://tempuri.org/xsd_query.xsd" xmlns:mstns="http://tempuri.org/xsd_query.xsd" xmlns="http://tempuri.org/xsd_query.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsd_query" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsd_query" msprop:Generator_UserDSName="xsd_query">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="income" msprop:Generator_TableClassName="incomeDataTable" msprop:Generator_TableVarName="tableincome" msprop:Generator_TablePropName="income" msprop:Generator_RowDeletingName="incomeRowDeleting" msprop:Generator_RowChangingName="incomeRowChanging" msprop:Generator_RowEvHandlerName="incomeRowChangeEventHandler" msprop:Generator_RowDeletedName="incomeRowDeleted" msprop:Generator_UserTableName="income" msprop:Generator_RowChangedName="incomeRowChanged" msprop:Generator_RowEvArgName="incomeRowChangeEvent" msprop:Generator_RowClassName="incomeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="inc_source" msprop:Generator_ColumnVarNameInTable="columninc_source" msprop:Generator_ColumnPropNameInRow="inc_source" msprop:Generator_ColumnPropNameInTable="inc_sourceColumn" msprop:Generator_UserColumnName="inc_source" type="xs:string" minOccurs="0" />
+              <xs:element name="inc_date" msprop:Generator_ColumnVarNameInTable="columninc_date" msprop:Generator_ColumnPropNameInRow="inc_date" msprop:Generator_ColumnPropNameInTable="inc_dateColumn" msprop:Generator_UserColumnName="inc_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="inc_amount" msprop:Generator_ColumnVarNameInTable="columninc_amount" msprop:Generator_ColumnPropNameInRow="inc_amount" msprop:Generator_ColumnPropNameInTable="inc_amountColumn" msprop:Generator_UserColumnName="inc_amount" type="xs:double" minOccurs="0" />
+              <xs:element name="inc_public" msprop:Generator_ColumnVarNameInTable="columninc_public" msprop:Generator_ColumnPropNameInRow="inc_public" msprop:Generator_ColumnPropNameInTable="inc_publicColumn" msprop:Generator_UserColumnName="inc_public" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="expend" msprop:Generator_TableClassName="expendDataTable" msprop:Generator_TableVarName="tableexpend" msprop:Generator_TablePropName="expend" msprop:Generator_RowDeletingName="expendRowDeleting" msprop:Generator_RowChangingName="expendRowChanging" msprop:Generator_RowEvHandlerName="expendRowChangeEventHandler" msprop:Generator_RowDeletedName="expendRowDeleted" msprop:Generator_UserTableName="expend" msprop:Generator_RowChangedName="expendRowChanged" msprop:Generator_RowEvArgName="expendRowChangeEvent" msprop:Generator_RowClassName="expendRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="exp_type" msprop:Generator_ColumnVarNameInTable="columnexp_type" msprop:Generator_ColumnPropNameInRow="exp_type" msprop:Generator_ColumnPropNameInTable="exp_typeColumn" msprop:Generator_UserColumnName="exp_type" type="xs:string" minOccurs="0" />
+              <xs:element name="exp_date" msprop:Generator_ColumnVarNameInTable="columnexp_date" msprop:Generator_ColumnPropNameInRow="exp_date" msprop:Generator_ColumnPropNameInTable="exp_dateColumn" msprop:Generator_UserColumnName="exp_date" type="xs:string" minOccurs="0" />
+              <xs:element name="exp_amount" msprop:Generator_ColumnVarNameInTable="columnexp_amount" msprop:Generator_ColumnPropNameInRow="exp_amount" msprop:Generator_ColumnPropNameInTable="exp_amountColumn" msprop:Generator_UserColumnName="exp_amount" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn2" msprop:Generator_ColumnVarNameInTable="columnDataColumn2" msprop:Generator_ColumnPropNameInRow="DataColumn2" msprop:Generator_ColumnPropNameInTable="DataColumn2Column" msprop:Generator_UserColumnName="DataColumn2" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn3" msprop:Generator_ColumnVarNameInTable="columnDataColumn3" msprop:Generator_ColumnPropNameInRow="DataColumn3" msprop:Generator_ColumnPropNameInTable="DataColumn3Column" msprop:Generator_UserColumnName="DataColumn3" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
